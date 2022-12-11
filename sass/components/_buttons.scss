@@ -1,0 +1,48 @@
+.btn {
+  width: 18rem;
+  // height: 5.3rem;
+  padding: 1.4rem 0;
+  background-color: $button-bg-color;
+  font-family: $main-font;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-left: auto;
+  border: 1px solid $yellow;
+  display: inline-block;
+  // margin-right: auto;
+  // @include responsive(l-phone) {
+  //   display: none;
+  // }
+  &:hover {
+    border: 1px solid $button-bg-color;
+    background-color: inherit;
+    color: $yellow;
+  }
+}
+.easy-btn {
+  width: 18rem;
+  height: 5.3rem;
+  background-color: $yellow;
+  &:hover {
+    border: 1px solid $button-bg-color;
+    background-color: inherit;
+    span {
+      color: $yellow;
+    }
+  }
+
+  span {
+    margin: 1.4rem 4.4rem;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: $whiteColor;
+  }
+}

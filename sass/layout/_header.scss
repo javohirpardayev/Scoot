@@ -1,0 +1,25 @@
+.header {
+  padding: 2.2rem 0;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffffe9;
+  z-index: 50;
+
+  .container {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+  }
+  &__tuggle-btn {
+    display: none;
+    @include responsive(l-phone) {
+      display: block;
+    }
+  }
+  &__logo {
+    @include responsive(l-phone) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

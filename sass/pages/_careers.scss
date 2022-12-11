@@ -1,0 +1,41 @@
+.careers-hero {
+  background-image: linear-gradient(
+      rgba(47, 59, 89, 0.75),
+      rgba(47, 59, 89, 0.75)
+    ),
+    url(../images/jpg/careers-hero.jpg);
+}
+.general {
+  margin-bottom: 16rem;
+  &__div {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.2rem 6.4rem 3.5rem 4rem;
+    max-width: 111rem;
+    background-color: $snow;
+    margin-bottom: 2.4rem;
+    @include responsive(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__text {
+    h4 {
+      margin-top: 0;
+      margin-bottom: 0.8rem;
+      letter-spacing: -1.07143px;
+      color: $darkNavy;
+      @include responsive(phone) {
+        text-align: center;
+      }
+    }
+
+    p {
+      margin: 0;
+      color: $darkNavy;
+      @include responsive(phone) {
+        text-align: center;
+      }
+    }
+  }
+}

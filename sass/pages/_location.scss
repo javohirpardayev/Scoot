@@ -1,0 +1,88 @@
+.davlatlar {
+  margin-bottom: 12rem;
+  &__img {
+    max-width: 111rem;
+    img {
+      width: 100%;
+    }
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+  &__img-phone {
+    display: none;
+    @include responsive(phone) {
+      display: block;
+      gap: 1.6rem;
+      img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2.6rem;
+      }
+      a {
+        justify-content: center;
+        max-width: 31.1rem;
+        // height: 7.2rem;
+        padding: 4.2rem 10rem;
+        background: rgba(252, 183, 43, 0.15);
+        margin-bottom: 1.6rem;
+        @include responsive(m-phone) {
+          padding: 4.2rem 5rem;
+        }
+        h4 {
+          line-height: 1;
+          max-width: 11.1rem;
+          margin: 0;
+          text-align: center;
+          letter-spacing: -1.07143px;
+          color: #495567;
+        }
+      }
+    }
+  }
+}
+.city {
+  margin-bottom: 12rem;
+  &__your {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include responsive(table) {
+      flex-direction: column;
+      gap: 4rem;
+    }
+    h2 {
+      max-width: 35.1rem;
+      letter-spacing: -2.14286px;
+      color: $darkNavy;
+      @include responsive(table) {
+        max-width: 45.7rem;
+        margin-bottom: 0;
+      }
+      //   margin-right: 3rem;
+    }
+    p {
+      max-width: 44.5rem;
+      color: #939caa;
+      //   margin-right: 10.5rem;
+      @include responsive(table) {
+        // margin-bottom: 4rem;
+      }
+    }
+    a {
+      width: 18rem;
+      background-color: $yellow;
+      padding: 1.4rem 1rem;
+      justify-content: center;
+      span {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+}

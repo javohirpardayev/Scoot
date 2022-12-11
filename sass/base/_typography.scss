@@ -1,0 +1,54 @@
+/* space-mono-regular - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/space-mono-v12-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/space-mono-v12-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/space-mono-v12-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/space-mono-v12-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/lexend-deca-v17-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/lexend-deca-v17-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+h1 {
+  font-size: $h1-size;
+  line-height: $h1-lineHight;
+  letter-spacing: $h1-letterSpacing;
+  font-family: $main-font;
+}
+h2 {
+  font-family: $main-font;
+
+  font-size: $h2-size;
+  line-height: $h2-lineHight;
+  letter-spacing: $h2-letterSpacing;
+}
+h3 {
+  font-family: $main-font;
+  font-size: $h3-size;
+  line-height: $h3-lineHight;
+  letter-spacing: $h3-letterSpacing;
+}
+h4 {
+  font-family: $main-font;
+  font-size: $h4-size;
+  line-height: $h4-lineHight;
+  letter-spacing: $h4-letterSpacing;
+}

@@ -1,0 +1,205 @@
+.about-hero {
+  margin-bottom: 12rem;
+  background-image: linear-gradient(
+      rgba(47, 59, 89, 0.75),
+      rgba(47, 59, 89, 0.75)
+    ),
+    url(../images/jpg/about-hero.jpg);
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+  background-repeat: no-repeat;
+  margin-top: 9.6rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $whiteColor;
+    @include responsive(phone) {
+      text-align: center;
+    }
+    @include responsive(m-phone) {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+  }
+  &__img {
+    display: flex;
+    gap: 2.4rem;
+    position: absolute;
+    top: 6.5rem;
+    right: -3.2rem;
+    z-index: 2;
+    @include responsive(phone) {
+      display: none;
+    }
+  }
+  &__circle-b {
+    border: 3px solid #ffffff;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+  }
+  &__circle {
+    border: 3px solid #ffffff;
+    background-color: $whiteColor;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+  }
+}
+.about-digital-str {
+  transform: rotateX(180deg);
+  bottom: 3.1rem;
+}
+
+.values {
+  margin-bottom: 12rem;
+  .container {
+    h2 {
+      margin-bottom: 8.5rem;
+      text-align: center;
+      color: $darkNavy;
+      @include responsive(m-phone) {
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+      }
+    }
+  }
+  &__div {
+    display: flex;
+    gap: 3rem;
+    @include responsive(table) {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__teach-img {
+    position: relative;
+    width: 24rem;
+    height: 24rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__teach-crcl {
+    background: $yellow;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -5.5rem;
+    left: 8rem;
+
+    img {
+      width: 2.9rem;
+      height: 2.8rem;
+    }
+  }
+  &__teach {
+    h4 {
+      margin-top: 8.7rem;
+      color: $darkNavy;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      @include responsive(table) {
+        max-width: 45.7rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.faks {
+  margin-bottom: 16rem;
+  h2 {
+    max-width: 54rem;
+    color: $darkNavy;
+    margin-bottom: 6.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    @include responsive(m-phone) {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+    }
+  }
+  &__work {
+    display: flex;
+    margin-bottom: 6.4rem;
+    @include responsive(table) {
+      flex-direction: column;
+    }
+  }
+  &__it {
+    h3 {
+      margin-top: 0;
+      width: 34rem;
+      margin-right: 3rem;
+      color: $darkNavy;
+      @include responsive(table) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include responsive(m-phone) {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        width: 28rem;
+      }
+    }
+  }
+  &__dowland {
+    max-width: 73rem;
+    background-color: #f2f5f9;
+    padding: 3.2rem 4rem;
+    margin-bottom: 1.6rem;
+    h4 {
+      margin: 0;
+      color: $darkNavy;
+      @include responsive(m-phone) {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+    p {
+      margin-bottom: 0;
+    }
+    img {
+      margin-left: auto;
+      margin-top: -2.5rem;
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__ride {
+    max-width: 73rem;
+    background-color: #f2f5f9;
+    margin-bottom: 1.6rem;
+    padding: 3.2rem 4rem;
+    display: flex;
+
+    img {
+      margin-left: auto;
+      transform: rotateX(180deg);
+    }
+    h4 {
+      margin: 0;
+      color: $darkNavy;
+      @include responsive(m-phone) {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+      }
+    }
+  }
+}
